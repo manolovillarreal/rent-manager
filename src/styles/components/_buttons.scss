@@ -1,0 +1,95 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 7px 10px 7px 10px;
+    transition: color 0.3s ease;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        color: darken($color: white, $amount: 10);
+    }
+}
+
+.btn-primary {
+    background-color: $secondary;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    &:hover {
+        background-color: darken($color: $secondary, $amount: 15);
+    }
+    &:disabled {
+        background-color: lighten($color: $secondary, $amount: 15);
+    }
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn_Add {
+    color: $secondary;
+    font-size: 50px;
+    &:hover {
+        color: lighten($color: $secondary, $amount: 30);
+    }
+    &:active {
+        color: darken($color: $secondary, $amount: 30);
+    }
+}
+
+.btn_newMacth {
+    background-color: $secondary;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 45px;
+    padding: 0 15px;
+    margin: 20px 0;
+}
+
+.google-btn {
+    cursor: pointer;
+    margin-top: 5px;
+    height: 50px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    transform: translate(-25px, 0);
+    transition: box-shadow 0.3s ease;
+    .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 80px;
+        height: 80px;
+        border-radius: 2px;
+        background-color: transparent;
+    }
+    .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 50px;
+        height: 50px;
+    }
+    .btn-text {
+        float: right;
+        margin: 11px 40px 0 0;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+        background: $button-active-blue;
+    }
+}
