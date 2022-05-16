@@ -1,0 +1,32 @@
+.btn_Kind {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.387);
+    height: 90px;
+    margin: 5px;
+    width: 90px;  
+    padding: 10px;
+    transition: all 0.3 ease;
+
+    &:hover{
+        background-color: rgb(58, 58, 58);
+    }
+    &:active{
+        transform: scale(0.9,0.9);
+    }
+
+ }
+
+ .img_kind{
+     filter: invert(1);
+     height: 100%;
+     width: 100%;
+ }
+
+ .option_auto{
+    filter: invert(1);
+    height: 100%;
+    width: 100%;
+}
+

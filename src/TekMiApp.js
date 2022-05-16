@@ -1,13 +1,13 @@
 import { Provider } from 'react-redux';
 
 import { store } from './store/store';
-import { AppRouter } from './routers/AppRouter';
+import { MainRouter } from './routers/MainRouter';
 
 
 
 function TekMiApp() {
     return ( <Provider store={ store }>
-      <AppRouter />
+      <MainRouter />
   </Provider>
     );
 }
