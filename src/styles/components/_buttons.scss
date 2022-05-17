@@ -33,14 +33,20 @@
     width: 100%;
 }
 
-.btn_Add {
-    color: $secondary;
-    font-size: 50px;
+.btnAdd {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../../../public/img/add_box.png');
+    background-size: contain;
+    border: none;
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+    transition: all 0.5 ease;
     &:hover {
         color: lighten($color: $secondary, $amount: 30);
     }
     &:active {
-        color: darken($color: $secondary, $amount: 30);
+      transform: scale(0.9,0.9);
     }
 }
 
