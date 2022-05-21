@@ -52,9 +52,9 @@ export const DashboardScreen = () => {
     </div>     
     <div >
      <h3> Nesecitamos saber de tu moto</h3>
-    <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+    <div className="mb-3">
+    <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
+    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
     </div>
     
     </div> 
