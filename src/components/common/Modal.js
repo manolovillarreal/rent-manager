@@ -8,7 +8,7 @@ export const Modal = ({ show, onClose, title, children }) => {
   return (
     <div className="modal" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <div className="modal-header">  
+        <div className="modal_header">  
         <div style={{display:"flex"}}>
         <button onClick={onClose} className="modal-btnClose">            
           </button>
