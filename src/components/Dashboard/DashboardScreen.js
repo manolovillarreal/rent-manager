@@ -55,13 +55,13 @@ export const DashboardScreen = () => {
 
       <div className="mt-3">
         <div style={{display:"flex"}}>
-        <label style={{flex:3}} htmlFor="modelo" className="form-label">Marca</label>
+        <label style={{flex:3}} htmlFor="marca" className="form-label">Marca</label>
         <label style={{flex:1}} htmlFor="modelo" className="form-label">Matricula</label>
 
         </div>
         <div style={{display:"flex"}}>
           <input  style={{flex:3}} name="marca" className="form-control" id="marca"  />
-          <input  style={{flex:1}}  name="marca" className="form-control" id="marca"  />
+          <input  style={{flex:1}}  name="modelo" className="form-control" id="modelo"  />
         </div>
         
       </div>
@@ -80,7 +80,7 @@ export const DashboardScreen = () => {
       </div>
        <div className="mt-3">
         <div style={{display:"flex"}}>
-        <label style={{flex:1}} htmlFor="modelo" className="form-label">Cilindraje</label>
+        <label style={{flex:2}} htmlFor="modelo" className="form-label">Cilindraje</label>
         <label style={{flex:2}} htmlFor="modelo" className="form-label">Color 1</label>
         <label style={{flex:2}} htmlFor="modelo" className="form-label">Color 2</label>
 
@@ -90,7 +90,10 @@ export const DashboardScreen = () => {
           <input  style={{flex:2}}  name="marca" className="form-control" id="marca"  />
           <input  style={{flex:2}}  name="marca" className="form-control" id="marca"  />
         </div>
+        <div>
+
         <button> Continuar</button>
+        </div>
       </div>
       
     
