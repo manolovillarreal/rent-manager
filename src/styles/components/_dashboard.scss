@@ -30,3 +30,16 @@
     width: 100%;
 }
 
+.form_content{
+    height: 450px;
+}
+form input,label{
+    margin: 0 5px;
+}
+
+.btn_color {
+    margin: 0 5px;
+    flex:2;
+    height: 40px;
+    width: 100px;
+}

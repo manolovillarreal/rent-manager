@@ -6,6 +6,7 @@ import {
     signInWithPopup,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
+    sendPasswordResetEmail,
     signOut,
 } from "firebase/auth";
 
@@ -15,7 +16,8 @@ import { types } from '../types/types';
 import { finishLoading, startLoading } from "./ui";
 
 
-export const startLoginWithEmail = (email, password) => {
+
+export const  startLoginWithEmail= (email,password) => {
     return (dispatch) => {
         dispatch(startLoading());
         signInWithEmailAndPassword(auth, email, password)
@@ -31,7 +33,23 @@ export const startLoginWithEmail = (email, password) => {
             });
     };
 };
-
+export const startRecoveryPassword = (email) => {
+    return (dispatch) => {
+        dispatch(startLoading());
+        sendPasswordResetEmail(auth, email)
+            .then(() => {               
+                dispatch(finishLoading());
+                Swal.fire("Email enviado","Se ha enviado un enlace de recuperación a su correo","success")
+            })
+            .catch((err) => {
+                console.log(err.code);
+                // dispatch(setError("Error de autenticación"));
+                dispatch(finishLoading());
+                console.log(err);
+                Swal.fire("Error", err.message + " " +err.code, "error");
+            });
+    };
+};
 export const startGoogleLogin = () => {
     return (dispatch) => {
         signInWithPopup(auth, googleAuthProvider)

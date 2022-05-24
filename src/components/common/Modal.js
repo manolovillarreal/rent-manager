@@ -17,9 +17,9 @@ export const Modal = ({ show, onClose, title, children }) => {
           <h1 className="modal-title">{title} </h1>
         </div>
         <div className="modal-body">{children}</div>
-        <div className="modal-footer">
+        {/* <div className="modal-footer">
          
-        </div>
+        </div> */}
       </div>
     </div>
   );

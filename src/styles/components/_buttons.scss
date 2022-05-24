@@ -15,9 +15,9 @@
 }
 
 .btn-primary {
-    background-color: $secondary;
+    background-color: black;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 18px;
     margin-top: 80px;
     margin-bottom: 10px;
@@ -50,7 +50,21 @@
     }
 }
 
+.form_button{
+    text-align: center;
+    position: fixed;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%,0);
 
+& button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+}
+}
 
 .google-btn {
     cursor: pointer;

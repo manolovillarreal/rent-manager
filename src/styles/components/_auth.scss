@@ -1,6 +1,5 @@
 .auth__main {
-    align-items: center;
-    background-color: $primary;
+    background-color: white;
     display: flex;
     justify-content: center;
     margin: 0px;
@@ -9,26 +8,26 @@
 }
 
 .auth__box-container {
-    padding: 20px;
+    padding: 50px;
     width: 80%;
     font-family: "Montserrat", sans-serif;
     max-width: 400px;
 }
 
 #auth__logo {
-    height: 80px;
+    height: 180px;
 }
 
 .auth__title {
-    color: white;
+    color: black;
     margin-bottom: 80px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
 }
 
 .auth__input {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.318);
     border: 0px;
-    border-bottom: 1px solid $light-grey;
     border-radius: 10px;
     color: $dark-grey;
     font-size: 16px;
@@ -57,7 +56,7 @@
 .auth__alert-error {
     background-color: rgb(235, 125, 125);
     border-radius: 5px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;

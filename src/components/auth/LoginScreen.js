@@ -28,9 +28,8 @@ export const LoginScreen = () => {
   return (
      <>
       <div style={{ textAlign: "center" }}>
-        <img id="auth__logo" src="/img/trophy.jpg" alt="logo" />
+        <img id="auth__logo" src="/img/logo.jpg" alt="logo" />
       </div>
-      <h2 className="auth__title">Tek Mi</h2>
       <h3 className="auth__title">Rent - Manager</h3>
 
       <form onSubmit={handleLogin}>
@@ -62,9 +61,15 @@ export const LoginScreen = () => {
         >
           LOG IN
         </button>
-        <div className="center mb-5 mt-1">
+        <div className="center mb-2 mt-1">
           <Link to="/auth/register" className="link">
             Sign Up
+          </Link>
+        </div>
+        <div className="center mb-5 mt-1">
+
+          <Link to="/auth/recovery" className="link">
+            Reset Password
           </Link>
         </div>
         <div className="auth__social-networks">
