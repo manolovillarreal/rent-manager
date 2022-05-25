@@ -68,20 +68,12 @@ export const DashboardScreen = () => {
       <div className="mt-3">
         <div style={{display:"flex"}}>
         <label style={{flex:3}} htmlFor="marca" className="form-label">Marca</label>
-<<<<<<< HEAD
         <label style={{flex:1}} htmlFor="matricula" className="form-label">Matricula</label>
-=======
-        <label style={{flex:1}} htmlFor="modelo" className="form-label">Matricula</label>
->>>>>>> e014bbcf4a073e5acb6eb1bc3d3f9ed983bb2545
 
         </div>
         <div style={{display:"flex"}}>
           <input  style={{flex:3}} name="marca" className="form-control" id="marca"  />
-<<<<<<< HEAD
           <input  style={{flex:1}}  name="matricula" className="form-control" id="matricula"  />
-=======
-          <input  style={{flex:1}}  name="modelo" className="form-control" id="modelo"  />
->>>>>>> e014bbcf4a073e5acb6eb1bc3d3f9ed983bb2545
         </div>
         
       </div>
@@ -107,16 +99,9 @@ export const DashboardScreen = () => {
       {/* colores */}
        <div className="mt-3">
         <div style={{display:"flex"}}>
-<<<<<<< HEAD
         <label style={{flex:1}} htmlFor="color1" className="form-label">Color 1</label>
         <label style={{flex:1}} htmlFor="color2" className="form-label">Color 2</label>
         <div style={{flex:2}}></div>
-=======
-        <label style={{flex:2}} htmlFor="modelo" className="form-label">Cilindraje</label>
-        <label style={{flex:2}} htmlFor="modelo" className="form-label">Color 1</label>
-        <label style={{flex:2}} htmlFor="modelo" className="form-label">Color 2</label>
-
->>>>>>> e014bbcf4a073e5acb6eb1bc3d3f9ed983bb2545
         </div>
         <div style={{display:"flex"}}>
           <button id="color1" 
@@ -134,17 +119,10 @@ export const DashboardScreen = () => {
 
   
         </div>
-<<<<<<< HEAD
         {
             showColor1 &&
             (<GithubPicker  onChangeComplete={ handleChangeColor } colors={ ['#000000','#FFFFFF','#B80000', '#DB3E00', '#FCCB00', '#008B02', '#006B76', '#1273DE', '#004DCF', '#5300EB', '#EB9694', '#FAD0C3', '#FEF3BD', '#C1E1C5', '#BEDADC', '#C4DEF6', '#BED3F3', '#D4C4FB','#560f70']}/>)
         }
-=======
-        <div>
-
-        <button> Continuar</button>
-        </div>
->>>>>>> e014bbcf4a073e5acb6eb1bc3d3f9ed983bb2545
       </div>
       </div>
      
